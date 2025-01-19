@@ -3,8 +3,11 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public Rigidbody sphereRigidbody;
-    public float ballSpeed = 2f;
+    //Unity allows for private variables to be exposed in the inspector by simply adding a [SerializeField] attribute
+    
+    [SerializeField] private Rigidbody sphereRigidbody;
+    [SerializeField] private float ballSpeed = 2f;
+
 
     void Start()
     {
